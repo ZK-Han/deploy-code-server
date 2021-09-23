@@ -8,7 +8,7 @@ Launch code-server on Heroku to get on-demand dev environments that turn off whe
 
 ## Step 1: Click to deploy
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bpmct/code-server-heroku/tree/main)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cdr/deploy-code-server/tree/main)
 
 ---
 
@@ -51,4 +51,8 @@ Press the button in the top right of the repo, or or click to [use this template
 
 1. (Optional): [Configure rclone](https://github.com/cdr/deploy-code-server/tree/main/deploy-container#-persist-your-filesystem-with-rclone) so that you can save your VS Code config and files without commiting
 
-See the [deploy-container README](../deploy-container) for other config vars for your environment. 
+See the [deploy-container README](../deploy-container) for other config vars for your environment.
+
+---
+
+To update your code-server version, modify the version number on line 2 in your Dockerfile. See the [list of tags](https://hub.docker.com/r/codercom/code-server/tags?page=1&ordering=last_updated) for the latest version.
